@@ -13,39 +13,77 @@ body {
     display: flex;
     width: 100%;
     height: 100vh;
+    background-image: url("../img/sfondo.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 /* WRAPPER */
 #wrapper {
+    padding: 50px;
+    border-radius: 10px;
     margin: auto;
     font-size: 30px;
+    background-color: #efe9dad8;
+    box-shadow: inset 0px 0px 20px #000000;
 }
 
 #wrapper h1 {
     margin: 40px;
     text-align: center;
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: #44890C;
+    text-shadow: 1px 1px 3px #000000;
+}
+#wrapper h4 {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EB9528;
+    text-shadow: 1px 1px 3px #000000;
+}
+#wrapper p {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0px 0px 1px #000000;
 }
 
 #wrapper input {
     width: 400px;
     padding: 10px;
     border-radius: 3px;
-    margin-bottom: 20px;
+    border: unset;
+    margin-bottom: 30px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
+    box-shadow: 1px 1px 7px #000000;
 }
+#wrapper input::placeholder {
+    color: #EB9528;
+}
+
 #wrapper button {
     padding: 10px;
     border-radius: 3px;
+    border: unset;
+    margin-left: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
+    color: #FFFFFF;
+    background-color: #EB9528;
+    text-shadow: 0px 0px 3px #000000;
+    box-shadow: inset 0px 0px 10px #000000;
     cursor: pointer;
+    transition: transform .2s, background-color .2s;
 }
-#wrapper p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #ff0000;
+#wrapper button:hover {
+    background-color: #eb97287e;
+    transform: scale(.97);
 }
 
 #wrapper ul {
@@ -57,18 +95,45 @@ body {
     padding: 20px 0;
 }
 #wrapper li:not(:last-child) {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #939191;
 }
 
 #wrapper span {
     display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
 }
 #wrapper .barText {
     text-decoration: line-through;
-    text-decoration-color: #ff0000;
+    text-decoration-color: 	#FF4500;
 }
 
 #wrapper i {
+    vertical-align: middle;
+    color: #EB9528;
+    text-shadow: 0px 0px 3px #000000;
     cursor: pointer;
+    transition: transform .2s, color .2s;
+}
+#wrapper i:hover {
+    color: #44890C;
+    transform: scale(.8);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #808080; 
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #44890C;
+    box-shadow: inset 0 0 5px #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #EB9528; 
+    box-shadow: inset 0 0 5px #000000;
 }

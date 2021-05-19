@@ -25,9 +25,9 @@
             <div id="wrapper">
                 <h1>Vue To Do List</h1>
                 <!-- INPUT BOX -->
+                <p v-if="errorText.length != 0">{{ errorText }}</p>
                 <input type="text" placeholder="Inserisci le cose da fare" v-model="newToDo" @keyup.enter="addToDo">
                 <button @click="addToDo">Aggiungi</button>
-                <p v-if="errorText.length != 0">{{ errorText }}</p>
                 <!-- /INPUT BOX -->
                 <!-- TO DO LIST -->
                 <ul v-if="toDoList.length > 0">
