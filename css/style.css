@@ -7,3 +7,21 @@
 body {
     font-family: 'Varela Round', sans-serif;
 }
+
+#root {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* WRAPPER */
+#wrapper {
+    margin: auto;
+    font-size: 30px;
+}
+/* #wrapper ul {
+    list-style: none;
+} */
+#wrapper li {
+    margin: 20px 0;
+}

@@ -20,7 +20,18 @@
     </head>
 
     <body>
-        
+        <div id="root">
+            <!-- WRAPPER -->
+            <div id="wrapper">
+                <ul>
+                    <li v-for="toDo in toDoList">
+                        {{toDo.text}}
+                        <i class="far fa-times-circle"></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- /WRAPPER -->
+        </div>
 
         <!-- SCRIPT JS -->
         <script src="js/script.js"></script>
