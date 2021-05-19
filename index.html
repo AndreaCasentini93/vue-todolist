@@ -23,12 +23,13 @@
         <div id="root">
             <!-- WRAPPER -->
             <div id="wrapper">
-                <ul>
-                    <li v-for="toDo in toDoList">
+                <ul v-if="toDoList.length > 0">
+                    <li v-for="(toDo, index) in toDoList">
                         {{toDo.text}}
-                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-times-circle" @click="deleteToDo(index)"></i>
                     </li>
                 </ul>
+                <h2 v-else>La lista è vuota</h2>
             </div>
             <!-- /WRAPPER -->
         </div>
