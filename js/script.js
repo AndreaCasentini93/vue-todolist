@@ -47,13 +47,11 @@ const app = new Vue(
                     this.errorText = "Errore, inserisci le cose da fare!";
                 }
             },
-            addRemoveBar: function() {
-                if (!this.toDoList.completed) {
-                    this.toDoList.completed = true;
-                    console.log("true");
+            addRemoveBar: function(objectIndex) {
+                if (!this.toDoList[objectIndex].completed) {
+                    this.toDoList[objectIndex].completed = true;
                 } else {
-                    this.toDoList.completed = false;
-                    console.log("false");
+                    this.toDoList[objectIndex].completed = false;
                 }
             }
         }
