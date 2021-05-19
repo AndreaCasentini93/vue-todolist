@@ -59,7 +59,7 @@ const app = new Vue(
                 } else {
                     value = false;
                 }
-                // Restituisco al completed il valore della variabile
+                // Restituire al completed il valore della variabile
                 this.toDoList[objectIndex].completed = value;
             }
         }
