@@ -24,14 +24,14 @@ body {
 #wrapper input {
     width: 400px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin-bottom: 30px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
 }
 #wrapper button {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
 }

@@ -26,11 +26,12 @@
                 <!-- INPUT BOX -->
                 <input type="text" placeholder="Inserisci le cose da fare" v-model="newToDo" @keyup.enter="addToDo">
                 <button @click="addToDo">Aggiungi</button>
+                <p v-if="errorText.length != 0">{{ errorText }}</p>
                 <!-- /INPUT BOX -->
                 <!-- TO DO LIST -->
                 <ul v-if="toDoList.length > 0">
                     <li v-for="(toDo, index) in toDoList">
-                        {{toDo.text}}
+                        {{ toDo.text }}
                         <i class="far fa-times-circle" @click="deleteToDo(index)"></i>
                     </li>
                 </ul>

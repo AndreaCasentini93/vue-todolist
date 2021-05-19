@@ -33,7 +33,8 @@ const app = new Vue(
                     completed: false,
                 }
             ],
-            newToDo: ''
+            newToDo: '',
+            errorText: ''
         },
         methods: {
             deleteToDo: function(deleteIndex) {
@@ -43,6 +44,10 @@ const app = new Vue(
                 if (this.newToDo.trim().length > 0 && isNaN(this.newToDo)) {
                     this.toDoList.push({text: this.newToDo, completed: false})
                     this.newToDo = '';
+                    this.errorText = '';
+                } else {
+                    this.newToDo = '';
+                    this.errorText = "Errore, inserisci le cose da fare.";
                 }
             }
         }
