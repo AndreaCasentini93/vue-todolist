@@ -60,6 +60,15 @@ body {
     border-bottom: 2px solid #000000;
 }
 
+#wrapper span {
+    display: inline-block;
+    cursor: pointer;
+}
+#wrapper .barText {
+    text-decoration: line-through;
+    text-decoration-color: #ff0000;
+}
+
 #wrapper i {
     cursor: pointer;
 }

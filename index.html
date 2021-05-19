@@ -32,7 +32,7 @@
                 <!-- TO DO LIST -->
                 <ul v-if="toDoList.length > 0">
                     <li v-for="(toDo, index) in toDoList">
-                        {{ toDo.text }}
+                        <span :class="toDoList.completed? 'barText' : 'text'" @click="addRemoveBar">{{ toDo.text }}</span>
                         <i class="far fa-times-circle" @click="deleteToDo(index)"></i>
                     </li>
                 </ul>
