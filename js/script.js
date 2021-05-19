@@ -35,7 +35,7 @@ const app = new Vue(
             addToDo: function() {
                 // Il nuovo testo "newToDo" non deve essere vuoto e non deve essere un numero
                 if (this.newToDo.trim().length > 0 && isNaN(this.newToDo)) {
-                    // Generare un nuovo testo "newToDo" minuscolo capitalizzato
+                    // Generare un nuovo testo "newToDo" minuscolo e capitalizzato
                     this.newToDo = this.newToDo[0].toUpperCase() + this.newToDo.substring(1);
                     // Inserire nell'array "toDoList" il nuovo oggetto avente text "newToDo" e completed "false"
                     this.toDoList.push({text: this.newToDo, completed: false})
