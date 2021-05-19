@@ -49,7 +49,9 @@ body {
 }
 
 #wrapper ul {
+    max-height: 400px;
     list-style: none;
+    overflow-y: auto;
 }
 #wrapper li {
     padding: 20px 0;
