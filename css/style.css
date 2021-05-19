@@ -21,11 +21,17 @@ body {
     font-size: 30px;
 }
 
+#wrapper h1 {
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
 #wrapper input {
     width: 400px;
     padding: 10px;
     border-radius: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
 }
@@ -34,6 +40,12 @@ body {
     border-radius: 3px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
+    cursor: pointer;
+}
+#wrapper p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ff0000;
 }
 
 #wrapper ul {

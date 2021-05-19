@@ -47,7 +47,7 @@ const app = new Vue(
                     this.errorText = '';
                 } else {
                     this.newToDo = '';
-                    this.errorText = "Errore, inserisci le cose da fare.";
+                    this.errorText = "Errore, inserisci le cose da fare!";
                 }
             }
         }
