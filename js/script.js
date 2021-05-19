@@ -29,7 +29,7 @@ const app = new Vue(
         },
         methods: {
             deleteToDo: function(deleteIndex) {
-                // Nell'array "toDoList" rimuovo l'oggetto con indice "deleteIndex"
+                // Nell'array "toDoList" rimuovere l'oggetto con indice "deleteIndex"
                 this.toDoList.splice(deleteIndex, 1);
             },
             addToDo: function() {
