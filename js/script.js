@@ -1,32 +1,26 @@
-/*
-BONUS:
-Al click sull'intero elemento della lista, si modifica il valore della proprietà completed da false a true, e viceversa in caso di successivi click (toggle).
-Quando un elemento ha la proprietà "completed" settata a true, il testo corrispondente sarà mostrato barrato (esisterà una proprietà CSS per ottenere questo effetto???).
-*/
-
 const app = new Vue(
     {
         el: '#root',
         data: {
             toDoList: [
                 {
-                    text: "A",
+                    text: "Portare il cane a passeggio",
                     completed: false,
                 },
                 {
-                    text: "B",
+                    text: "Andare a lavoro",
                     completed: false,
                 },
                 {
-                    text: "C",
+                    text: "Fare la spesa",
                     completed: false,
                 },
                 {
-                    text: "D",
+                    text: "Andare in palestra",
                     completed: false,
                 },
                 {
-                    text: "E",
+                    text: "Fare le pulizie di casa",
                     completed: false,
                 }
             ],
@@ -48,11 +42,13 @@ const app = new Vue(
                 }
             },
             addRemoveBar: function(objectIndex) {
-                if (!this.toDoList[objectIndex].completed) {
-                    this.toDoList[objectIndex].completed = true;
+                let value = this.toDoList[objectIndex].completed;
+                if (!value) {
+                    value = true;
                 } else {
-                    this.toDoList[objectIndex].completed = false;
+                    value = false;
                 }
+                this.toDoList[objectIndex].completed = value;
             }
         }
     }
