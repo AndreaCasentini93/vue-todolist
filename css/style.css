@@ -1,3 +1,4 @@
+/* COMMONS */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,13 +22,30 @@ body {
 }
 
 #wrapper input {
-    width: 300px;
+    width: 400px;
     padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+#wrapper button {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
 }
 
 #wrapper ul {
     list-style: none;
 }
 #wrapper li {
-    margin: 20px 0;
+    padding: 20px 0;
+}
+#wrapper li:not(:last-child) {
+    border-bottom: 2px solid #000000;
+}
+
+#wrapper i {
+    cursor: pointer;
 }

@@ -24,7 +24,7 @@
             <!-- WRAPPER -->
             <div id="wrapper">
                 <!-- INPUT BOX -->
-                <input type="text" v-model="newToDo" placeholder="Inserisci le cose da fare">
+                <input type="text" placeholder="Inserisci le cose da fare" v-model="newToDo" @keyup.enter="addToDo">
                 <button @click="addToDo">Aggiungi</button>
                 <!-- /INPUT BOX -->
                 <!-- TO DO LIST -->
