@@ -19,9 +19,15 @@ body {
     margin: auto;
     font-size: 30px;
 }
-/* #wrapper ul {
+
+#wrapper input {
+    width: 300px;
+    padding: 10px;
+}
+
+#wrapper ul {
     list-style: none;
-} */
+}
 #wrapper li {
     margin: 20px 0;
 }

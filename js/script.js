@@ -32,12 +32,19 @@ const app = new Vue(
                     text: "E",
                     completed: false,
                 }
-            ]
+            ],
+            newToDo: ''
         },
         methods: {
             deleteToDo: function(deleteIndex) {
                 this.toDoList.splice(deleteIndex, 1);
             },
+            addToDo: function() {
+                if (this.newToDo.trim().length > 0 && isNaN(this.newToDo)) {
+                    this.toDoList.push({text: this.newToDo, completed: false})
+                    this.newToDo = '';
+                }
+            }
         }
     }
 );

@@ -23,6 +23,11 @@
         <div id="root">
             <!-- WRAPPER -->
             <div id="wrapper">
+                <!-- INPUT BOX -->
+                <input type="text" v-model="newToDo" placeholder="Inserisci le cose da fare">
+                <button @click="addToDo">Aggiungi</button>
+                <!-- /INPUT BOX -->
+                <!-- TO DO LIST -->
                 <ul v-if="toDoList.length > 0">
                     <li v-for="(toDo, index) in toDoList">
                         {{toDo.text}}
@@ -30,6 +35,7 @@
                     </li>
                 </ul>
                 <h2 v-else>La lista è vuota</h2>
+                <!-- /TO DO LIST -->
             </div>
             <!-- /WRAPPER -->
         </div>
